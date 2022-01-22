@@ -78,9 +78,41 @@ nav button {
 
 nav button:hover {
   box-shadow: 1px 2px 10px #ccc;
+  position: relative;
 }
 
 button.right {
   background-color: green;
   color: white;
+}
+
+.shake {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-name: shake;
+}
+@keyframes shake {
+  3%,
+  21%,
+  39%,
+  57%,
+  74%,
+  92% {
+    right: -5px;
+  }
+  2%,
+  25%,
+  45%,
+  65%,
+  80%,
+  98% {
+    right: 0;
+  }
+  15%,
+  35%,
+  55%,
+  75%,
+  85% {
+    right: 5px;
+  }
 }
