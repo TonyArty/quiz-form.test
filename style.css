@@ -1,0 +1,13 @@
+body {
+  font-family: sans-serif;
+}
+
+.step ul {
+  list-style-type: none;
+}
+
+.step li {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}

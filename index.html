@@ -9,10 +9,10 @@
 <body>
   <section id="quiz">
     <h1>Quiz</h1>
-    <p>Quiz this form and get presentation special for you</p>
+    <h2>Quiz this form and get presentation special for you</h2>
     <div id="quiz_from">
       <div class="step">
-        <h2>Question #1</h2>
+        <h3>Question #1</h3>
         <ul>
           <li>
             <input type="radio" name="question_1" id="q_1_a_1" value="Q-1 Answer 1">
@@ -29,7 +29,7 @@
         </ul>
       </div>
       <div class="step d-none">
-        <h2>Question #2</h2>
+        <h3>Question #2</h3>
         <ul>
           <li>
             <input type="checkbox" name="question_2" id="q_2_a_1" value="Q-2 Answer 1">
@@ -46,7 +46,7 @@
         </ul>
       </div>
       <div class="step d-none">
-        <h2>Question #3</h2>
+        <h3>Question #3</h3>
         <ul>
           <li>
             <input type="radio" name="question_3" id="q_3_a_1" value="Q-3 Answer 1">
@@ -63,10 +63,10 @@
         </ul>
       </div>
       <div class="step d-none">
-        <h2>Question #4</h2>
+        <h3>Question #4</h3>
         <ul>
           <li>
-            <input type="range" list="tickmarks" name="question_4" id="q_4_a_1" value="50">
+            <input type="range" list="tickmarks" name="question_4" id="q_4_a" oninput="q_4_a_out.value = q_4_a.value" value="50">
             <datalist id="tickmarks">
               <option value="0" label="0">
               <option value="10">
@@ -80,6 +80,7 @@
               <option value="90">
               <option value="100" label="100">
             </datalist>
+            <output name="question_4_out" id="q_4_a_out">50</output>
           </li>
         </ul>
       </div>
