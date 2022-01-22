@@ -17,10 +17,7 @@ if(document.body.contains(document.getElementById('quiz'))){
     } else {
       navPrev.removeAttribute('disabled', 'disabled');
     }
-    if (n == 7) {
-      dataTexts.forEach(el => {
-        el.classList.add('d-none');
-      })
+    if (n == 4) {
       navPrev.classList.add('d-none');
       navNext.classList.add('d-none');
     }
@@ -61,4 +58,8 @@ if(document.body.contains(document.getElementById('quiz'))){
       navNext.classList.toggle('shake');
     })
   })
+  // Shake next button by oninput range
+  formQuiz.querySelector('input[type=range]').oninput = function() {
+    navNext.classList.toggle('shake');
+  }
 }
