@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz Form</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <section id="quiz">
+  <div id="quiz">
     <h1>Quiz Form</h1>
     <h2>Quiz this form and get presentation special for you</h2>
-    <div id="quiz_from">
+    <div id="form_quiz">
       <div class="step">
         <h3>Question #1</h3>
         <ul>
@@ -87,11 +87,11 @@
         </ul>
       </div>
       <nav>
-        <button class="left">&lsaquo; Previous</button>
-        <button class="right">Next &rsaquo;</button>
+        <button class="left" onclick="nextPrev(-1)">&lsaquo; Previous</button>
+        <button class="right" onclick="nextPrev(1)">Next &rsaquo;</button>
       </nav>
     </div>
-  </section>
+  </div>
   
 </body>
 </html>
