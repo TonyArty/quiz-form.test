@@ -38,6 +38,13 @@ h3 {
   position: relative;
 }
 
+.step [type="radio"],
+.step [type="checkbox"] {
+  position: absolute;
+  left: 5px;
+  cursor: pointer;
+}
+
 .step label {
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -56,10 +63,16 @@ h3 {
   background-color: #f1f1f1;
 }
 
-.step [type="radio"],
-.step [type="checkbox"] {
-  position: absolute;
-  left: 5px;
+.step [type="range"] {
+  cursor: pointer;
+  width: 300px;
+  max-width: 100%;
+}
+
+.step output {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 nav {
