@@ -22,6 +22,17 @@ if(document.body.contains(document.getElementById('quiz'))){
       navNext.classList.add('d-none');
       document.querySelector('input[name="user_name"]').focus();
     }
+
+    // When answer is not choice, shake items of step, if  next button is click
+    var stepItems = step[n].querySelectorAll('li');
+    navNext.addEventListener('click', () => {
+      stepItems.forEach(el => {
+        if(!el.firstElementChild.checked){
+          el.classList.toggle('shake');
+        }
+      })
+    })
+
   }
 
   function validateForm() {
@@ -63,10 +74,4 @@ if(document.body.contains(document.getElementById('quiz'))){
   formQuiz.querySelector('input[type=range]').oninput = () => {
     navNext.classList.toggle('shake');
   }
-  // Shake items step by click next button
-  navNext.addEventListener('click', () => {
-    formQuiz.querySelectorAll('li').forEach(el => {
-      el.classList.toggle('shake');
-    })
-  })
 }
