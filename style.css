@@ -104,7 +104,7 @@ nav {
   justify-content: space-between;
 }
 
-nav a {
+nav > * {
   display: inline-block;
   font-weight: bold;
   padding: 10px 20px;
@@ -118,7 +118,7 @@ nav a {
   cursor: default;
 }
 
-nav a:hover,
+nav > :hover,
 .step [type="submit"]:hover {
   box-shadow: 1px 2px 10px #ccc;
 }
@@ -127,12 +127,12 @@ nav a:hover,
   box-shadow: none;
 }
 
-nav a:active,
+nav > :active,
 .step [type="submit"]:active {
   box-shadow: inset 1px 1px 5px #999;
 }
 
-a.right {
+.right {
   background-color: green;
   color: white;
 }
