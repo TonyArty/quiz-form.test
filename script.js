@@ -20,6 +20,7 @@ if(document.body.contains(document.getElementById('quiz'))){
     if (n == 4) {
       navPrev.classList.add('d-none');
       navNext.classList.add('d-none');
+      document.querySelector('input[name="user_name"]').focus();
     }
   }
 
