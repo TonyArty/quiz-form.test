@@ -1,8 +1,8 @@
 if(document.body.contains(document.getElementById('quiz'))){
   const formQuiz = document.getElementById('form_quiz');
   const step = document.getElementsByClassName('step');
-  const navPrev = document.querySelector('button.left');
-  const navNext = document.querySelector('button.right');
+  const navPrev = document.querySelector('a.left');
+  const navNext = document.querySelector('a.right');
 
   var currentTab = 0; // Current tab is set to be the first tab (0)
   showTab(currentTab); // Display the crurrent tab
