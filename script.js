@@ -59,7 +59,7 @@ if(document.body.contains(document.getElementById('quiz'))){
     })
   })
   // Shake next button by oninput range
-  formQuiz.querySelector('input[type=range]').oninput = function() {
+  formQuiz.querySelector('input[type=range]').oninput = () => {
     navNext.classList.toggle('shake');
   }
 }
