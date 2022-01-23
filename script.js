@@ -5,7 +5,7 @@ if(document.body.contains(document.getElementById('quiz'))){
   const navNext = document.querySelector('.right');
 
   var currentTab = 0; // Current tab is set to be the first tab (0)
-  showTab(currentTab); // Display the crurrent tab
+  showTab(currentTab); // Display the current tab
 
   function showTab(n) {
     // This function will display the specified tab of the form...
@@ -63,4 +63,10 @@ if(document.body.contains(document.getElementById('quiz'))){
   formQuiz.querySelector('input[type=range]').oninput = () => {
     navNext.classList.toggle('shake');
   }
+  // Shake items step by click next button
+  navNext.addEventListener('click', () => {
+    formQuiz.querySelectorAll('li').forEach(el => {
+      el.classList.toggle('shake');
+    })
+  })
 }
