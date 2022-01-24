@@ -18,18 +18,18 @@ if (isset($_POST["user_email"])) {
 
   $headers = 'From:' . $sender;
 
-  $subject = "Site form from user: " . $user_name;
+  $subject = "Form from user: " . $user_name;
 
   $message  = "User name: " . $user_name . "\n";
   $message .= "\n\nUser email: " . $user_email . "\n";
   $message .= "\n\n- - - - - -\n";
   $message .= "\n\nAnswers: \n";
-  $message .= "\n\Question #1: " . $answer_to_question_1 . "\n";
-  $message .= "\n\Question #2: " . $answer_to_question_2 . "\n";
-  $message .= "\n\Question #3: " . $answer_to_question_3 . "\n";
-  $message .= "\n\Question #4: " . $answer_to_question_4 . "\n";
+  $message .= "\n\nQuestion #1: " . $answer_to_question_1 . "\n";
+  $message .= "\n\nQuestion #2: " . $answer_to_question_2 . "\n";
+  $message .= "\n\nQuestion #3: " . $answer_to_question_3 . "\n";
+  $message .= "\n\nQuestion #4: " . $answer_to_question_4 . "\n";
   $message .= "\n\n- - - - - -\n";
-  $message .= "\n\Send from site: " . $current_domain . "\n";
+  $message .= "\n\nSent from site: " . $current_domain . "\n";
 } else {
   $subject = "php mail test";
   $message = "php test message";
