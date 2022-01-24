@@ -12,7 +12,7 @@
   <div id="quiz">
     <h1>Quiz Form</h1>
     <h2>Quiz this form and get presentation special for you</h2>
-    <form id="form_quiz">
+    <form id="form_quiz" method="post" action="send.php">
       <div class="step">
         <h3>Question #1</h3>
         <ul>
@@ -88,8 +88,8 @@
       </div>
       <div class="step d-none">
         <h3>Send contact form and get result</h3>
-        <input type="text" placeholder="Name" name="user_name" required>
-        <input type="email" placeholder="Phone number" name="user_phone" required>
+        <input type="text" placeholder="Your Name" name="user_name" required>
+        <input type="email" placeholder="Your Email" name="user_email" required>
         <input type="submit" value="Get result">
       </div>
       <nav>
