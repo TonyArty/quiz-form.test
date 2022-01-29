@@ -18,6 +18,10 @@ h3 {
   margin: auto;
 }
 
+.form-box {
+  margin-bottom: 1em;
+}
+
 .step {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;

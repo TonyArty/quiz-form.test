@@ -12,7 +12,7 @@
   <div id="quiz">
     <h1>Quiz Form</h1>
     <h2>Quiz this form and get presentation special for you</h2>
-    <form id="form_quiz" method="post" action="send.php">
+    <form method="post" action="send.php" class="form-box" id="form_quiz" >
       <div class="step">
         <h3>Question #1</h3>
         <ul>
@@ -90,13 +90,35 @@
         <h3>Send contact form and get result</h3>
         <input type="text" placeholder="Your Name" name="user_name" required>
         <input type="email" placeholder="Your Email" name="user_email" required>
-        <input type="submit" value="Get result">
+        <input type="submit" value="Get result" class="form-submit">
       </div>
       <nav>
         <button class="left" type="button" onclick="nextPrev(-1)">&lsaquo; Previous</button>
         <button class="right" type="button" onclick="nextPrev(1)">Next &rsaquo;</button>
       </nav>
     </form>
+
+    <hr>
+
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+    book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+    recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+    <form method="post" action="send.php" class="form-box" id="form_contact">
+      <div class="step">
+        <h3>Send contact form and get free consultation</h3>
+        <input type="text" placeholder="Your Name" name="user_name" required>
+        <input type="email" placeholder="Your Email" name="user_email" required>
+        <input type="submit" value="Get consultation" class="form-submit">
+      </div>
+    </form>
+
+
+
+
+
   </div>
   
 </body>
