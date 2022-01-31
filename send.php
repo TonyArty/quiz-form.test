@@ -13,6 +13,9 @@ if (isset($_POST["user_email"])) {
 
   $answer_to_question_1 = filter_var($_POST["question_1"]);
   $answer_to_question_2 = filter_var($_POST["question_2"]);
+  // foreach ($_POST["question_2"] as $check_answer_to_question_2) {
+  //   echo $check_answer_to_question_2;
+  // }
   $answer_to_question_3 = filter_var($_POST["question_3"]);
   $answer_to_question_4 = filter_var($_POST["question_4"]);
 

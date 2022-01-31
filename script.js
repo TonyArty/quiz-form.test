@@ -85,7 +85,8 @@ if (document.body.contains(document.getElementById("quiz"))) {
 const submitButton = document.querySelectorAll(".form-submit");
 
 submitButton.forEach((el) => {
-  el.addEventListener("click", () => {
+  el.addEventListener("click", (event) => {
+    // event.preventDefault();
     const formId = el.closest(".form-box").id;
     console.log("formId: ", formId);
   });
