@@ -83,11 +83,12 @@ if (document.body.contains(document.getElementById("quiz"))) {
 
 /* Quiz form: contact form events */
 const submitButton = document.querySelectorAll(".form-submit");
-
 submitButton.forEach((el) => {
   el.addEventListener("click", (event) => {
     // event.preventDefault();
     const formId = el.closest(".form-box").id;
     console.log("formId: ", formId);
+
+    const proceed = true;
   });
 });
